@@ -1,0 +1,180 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&family=Young+Serif&display=swap');
+
+:root {
+
+    /* colors */
+    --White: hsl(0, 0%, 100%);
+
+    --Stone100: hsl(30, 54%, 90%);
+    --Stone150: hsl(30, 18%, 87%);
+    --Stone600: hsl(30, 10%, 34%);
+    --Stone900: hsl(24, 5%, 18%);
+    --Brown800: hsl(14, 45%, 36%);
+    --Rose800: hsl(332, 51%, 32%);
+    --Rose50: hsl(330, 100%, 98%);
+
+    /* font sizes */
+    --fs-1: 1.25rem;
+    --fs-2: 1.5rem;
+    --fs-3: 2rem;
+}
+
+html {
+    /* margin: 0;
+    padding: 0; */
+    font-size: 16px;
+    font-family: "Outfit", Arial, Helvetica, sans-serif;
+}
+
+.subtitle {
+    font-family: "Young Serif", Arial, Helvetica, sans-serif;
+    font-size: var(--fs-2);
+    font-weight: 400;
+    color: var(--Brown800);
+}
+
+.text-bold {
+    font-weight: 700;
+}
+
+hr {
+    border: 0;
+    display: block;
+    clear: both;
+    width: 100%;
+    height: 1px;
+    background-color: lightgray;
+}
+
+body {
+    background-color: #F3E5D8;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: auto;
+}
+.card {
+    height: auto;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    justify-self: center;
+    background-color: var(--White);
+    border-radius: 0.5em;
+    padding: 30px;
+}
+
+.card > img {
+    border-radius: 0.25rem;
+}
+
+.title {
+    font-family: "Young Serif", Arial, Helvetica, sans-serif;
+    font-size: var(--fs-3);
+    color: var(--Stone900);
+}
+
+.prep-time {
+    border-radius: 10px;
+    background-color: var(--Rose50);
+    padding: 1rem;
+}
+
+.lists > li {
+    padding: 5px 20px;
+}
+
+.prep-time-title {
+    color: var(--Rose800);
+}
+
+.lists li::marker {
+    color: var(--Rose800);
+    font-weight: 600;
+}
+
+table, tr, td {
+  border-bottom: 1px solid lightgray;
+  border-collapse: collapse;
+  margin: 10px;
+  padding: 15px;
+}
+
+.nutrition-table {
+    width: 90%;
+}
+
+.nutrition-value {
+    color: var(--Rose800);
+    font-weight: 700;
+}
+
+table tr:last-child {
+    border: none;
+  }
+
+p, li {
+    color: var(--Stone600);
+}
+
+
+
+/* media queries */
+/* Extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+
+    :root {
+        --fs-1: 1.125rem;
+        --fs-2: 1.5rem;
+        --fs-3: 2rem;
+    }
+
+    .card {
+        width: 100%;
+        padding: 0%;
+    }
+
+    .card > img {
+        width: 100%;
+        border-radius: 0%;
+    }
+
+    .title-box, .prep-time, .ingredients, .instructions, .nutrition {
+        padding: 15px;
+        margin: 20px;
+    }
+
+    hr {
+        width: 90%;
+    }
+    
+}
+
+@media only screen and (max-width: 768px) {
+    .card {
+        width: 80vw;
+    }
+}
+
+/* Small devices (portrait tablets and large phones, 600px and up) */
+/* @media only screen and (min-width: 600px) {
+    
+} */
+
+/* Medium devices (landscape tablets, 768px and up) */
+/* @media only screen and (min-width: 768px) {
+  
+} 
+
+/* Large devices (laptops/desktops, 992px and up) */
+/* @media only screen and (min-width: 992px) {
+  
+} 
+
+/* Extra large devices (large laptops and desktops, 1200px and up) */
+/* @media only screen and (min-width: 1200px) {
+  .example {background: pink;}
+} */ 
