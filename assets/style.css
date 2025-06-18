@@ -83,8 +83,13 @@ body {
     padding: 1rem;
 }
 
+.text-p {
+    color: var(--Stone600);
+}
+
 .lists > li {
     padding: 5px 20px;
+    color: var(--Stone600);
 }
 
 .prep-time-title {
@@ -115,10 +120,6 @@ table, tr, td {
 table tr:last-child {
     border: none;
   }
-
-li, p {
-    color: var(--Stone600);
-}
 
 
 
