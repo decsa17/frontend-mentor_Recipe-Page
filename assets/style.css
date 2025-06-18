@@ -116,7 +116,7 @@ table tr:last-child {
     border: none;
   }
 
-p, li {
+li, p {
     color: var(--Stone600);
 }
 
